@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane's Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__nav-item header__nav-item--has-qr header__nav-item--separate">Vào của hàng trên ứng dụng Jane's
+                               <!-- QR Code -->
+                                <div class="header__qr">
+                                    <img src="./assets/img/header-download-qr-code/qr-code.png" alt="" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="https://shopee.vn/web" class="header__qr-link">
+                                            <img src="./assets/img/header-download-qr-code/google-play.png" alt="" class="header__qr-download-omg">
+                                        </a>
+                                        <a href="https://shopee.vn/web" class="header__qr-link">
+                                            <img src="./assets/img/header-download-qr-code/app-store.png" alt="" class="header__qr-download-omg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <span class="header__nav-title--no-pointer">Kết nối</span>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fab fa-facebook-square"></i>
+                                </a>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="header__navbar-list">
+                            <li class="header__nav-item header__nav-item--has-notify">
+                                <a href="" class="header__nav-item-link">
+                                    <i class="header__navbar-icon far fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-header">
+                                        <h3>
+                                            Thông báo mới nhận
+                                        </h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://muarechinhhang.com/images/products/2020/08/04/original/naturequeen_1596527631.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Chỉ từ 1K đổi về 5 VOUCHERS HOT!</span>
+                                                    <span class="header__notify-description">3  Mã Freeship đến 30K đơn từ 90K. 1 Mã giảm ngay 20k cho đơn từ 50K</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--viewed">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://muarechinhhang.com/images/products/2020/08/04/original/naturequeen_1596527631.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Xác thực chính hãng các nguồn gốc sản phẩm </span>
+                                                    <span class="header__notify-description">Hidden tag là công nghệ xác thực hàng chính hãng tiên tiến nhất hiện nay</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://muarechinhhang.com/images/products/2020/08/04/original/naturequeen_1596527631.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">An toàn săn sale 9.9</span>
+                                                    <span class="header__notify-description">Hãy cẩn trọng với hành vi lừa đảo. Mua sắm tưng bừng dị 9.9 Ngày siêu mua sắm mà chẳng ngại âu lo </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                    </footer>
+                                </div>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="" class="header__nav-item-link">
+                                    <i class="header__navbar-icon far fa-question-circle"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__nav-item header__nav-item--strong js-header-register">Đăng ký</li>
+                            <li class="header__nav-item header__nav-item--strong js-header-login">Đăng nhập</li>
+                            
+                            <!-- After Login Successful -->
+                            <li class="header__nav-item header__nav-user js-header__nav-user">
+                                <img src="https://cf.shopee.vn/file/5a31213962926751d5fbde01e89c7d86_tn" alt="" class="header__nav-user-img">
+                                <span class="header__nav-user-name js-header__nav-user-name">MinhQuan</span>
+                                <ul class="header__nav-user-menu">
+                                    <li class="header__nav-user-item">
+                                        <a href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header__nav-user-item">
+                                        <a href="">Đơn mua</a>
+                                    </li>
+                                    <li class="header__nav-user-item js-header__nav-user-item-logout">
+                                        <a href="">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- HEADER SEARCH -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="/" class="header__logo-link">
+                                Jane's
+                            </a>
+                        </div>
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                                <!-- SEARCH HISTORY -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Dầu gội đầu</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Laptop gaming</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">Trong shop</span>
+                                <i class="header__search-select-icon fas fa-chevron-down"></i>
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>Trong shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+                        <!-- Layout cart -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart--icon fas fa-shopping-cart"></i>
+                                <span class="header__cart-notice">3</span>
+                                <!-- no cart: header__cart-list--no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="no_cart" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+                                    <!-- Cary item -->
+                                    <h4 class="header__cart-heading">Sản phẩm mới thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- <li class="header__cart-item">
+                                                <img src="https://cf.shopee.vn/file/33c0297d25778e79ed64dddde61ccede" alt="" class="header__cart-img">
+                                                <div class="header__cart-item-info">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-name">Tông đơ kemie </h5>
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">450.000đ</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-qnt">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">Phân loại: vật dụng</span>
+                                                        <span class="header__cart-item-remove">Xóa</span>
+                                                    </div>
+                                                </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/33c0297d25778e79ed64dddde61ccede" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Tông đơ kemie</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">450.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại: vật dụng</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/33c0297d25778e79ed64dddde61ccede" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Tông đơ kemie</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">450.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại: vật dụng</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://cf.shopee.vn/file/33c0297d25778e79ed64dddde61ccede" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Tông đơ kemie</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">450.000đ</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Phân loại: vật dụng</span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                        
+                                    </ul>
+                                    <a href="./productPay.html" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+        <div class="app_container">
+            <div class="grid">
+                <div class="grid__row app_content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Áo thun nam</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="" class="category-item__link">Dép em bé</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="" class="category-item__link">Lap top</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Săp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+                            <div class="select-input">
+                                <div class="select-input__wrap">
+                                    <span class="select-input__label">
+                                        Giá
+                                    </span>
+                                    <i class="select-input__icon fas fa-chevron-down"></i>
+                                </div>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: từ thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: từ cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-curent">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Home product -->
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-1">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-2" >
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-3">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-4">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-5">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-6">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-7">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-8">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-9">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <a href="./productDetail.html" class="home-product-item js-home-product-item-10">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/940b603a511ca0a44c2889cdd1d7d4fe);"></div>
+                                        <div class="home-product-item__name">Máy Cạo Râu Nam Kèm Đầu Tỉa Lông Mũi và Tông Đơ Hớt Tóc 3 in 1 KEMEI 1407- BH 12 Tháng</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-current">280.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like-liked">
+                                                <i class="home-product-item__like-empty far fa-heart"></i>
+                                                <i class="home-product-item__like-fill fas fa-heart"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="home-product-item__star--gold fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 30</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">China</span>
+                                            <span class="home-product-item__origin-name">Hà Nội</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+
+                                    
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="pagination home-product__pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item__link">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item__link">
+                                    <i class="pagination-item__icon fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Jane's shop</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới Thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều Khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Danh Mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Áo Thun Nam</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Dép Em Bé</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Lap Top</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-facebook-square"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="fab fa-tiktok"></i>
+                                    Tiktok
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__heading">Vào của hàng trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/header-download-qr-code/qr-code.png" alt="Download QR" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <a href="" class="footer__download-app-link">
+                                    <img src="./assets/img/header-download-qr-code/google-play.png" alt="Google" class="footer__download-app-img">
+                                </a>
+                                <a href="" class="footer__download-app-link">
+                                <img src="./assets/img/header-download-qr-code/app-store.png" alt="App store" class="footer__download-app-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- MODAL -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body js-modal-body"> 
+
+            <!-- Register form -->
+            <div class="auth-form js-auth-form-register">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__swith-btn js-auth-form__swith-btn-register">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" id="email-register" name="emailregister" placeholder="Email của bạn">
+                            <span class="auth-form__messeage"></span>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" id="password-register" name="passwordregister" placeholder="Nhập mật khẩu của bạn">
+                            <span class="auth-form__messeage"></span>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" id="repassword-register" name="repasswordregister" placeholder="Nhập lại mật khẩu của bạn">
+                            <span class="auth-form__messeage"></span>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                        Bằng việc đăng ký, bạn đã đăng ký với shopee về
+                        <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                        <a href="" class="auth-form__text-link">Chính sách bảo mật</a>    
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back js-auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary js-btn-register">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+
+            </div> 
+
+            <!-- Login form -->
+              <div class="auth-form js-auth-form-login">  
+                 <div class="auth-form__container .js-auth-form-login">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Nhập</h3>
+                        <span class="auth-form__swith-btn js-auth-form__swith-btn-login">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" id="email-login"  placeholder="Email của bạn">
+                            <span class="auth-form__messeage"></span>
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" id="password-login"  placeholder="Nhập mật khẩu của bạn">
+                            <span class="auth-form__messeage"></span>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <div class="auth-form__help-separate"></div>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back js-auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary js-btn-login">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div> 
+
+            </div> 
+        </div>
+    </div>
+
+    <script src="./assets/JS/mainUI1.js">
+    </script>
+    <script>
+        Validator({
+            form: '.js-auth-form-register',
+            errorElement: '.auth-form__messeage',
+            btn: '.js-btn-register',
+            rules: [
+                // Register
+                Validator.isEmail('#email-register'),
+                Validator.isRequired('#password-register'),
+                Validator.isConfirmed('#repassword-register', function() {
+                    return document.querySelector('.auth-form #password-register').value;
+                }, "Mật khẩu nhập lại không chính xác"),
+                
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        });
+
+        Validator({
+            form: '.js-auth-form-login',
+            errorElement: '.auth-form__messeage',
+            btn: '.js-btn-login',
+            rules: [
+                Validator.isEmail('#email-login'),
+                Validator.isRequired('#password-login'),
+                
+            ]
+        });
+    </script>
+    <script src="./assets/JS/common_01.js">
+    </script>
+</body>
+</html>

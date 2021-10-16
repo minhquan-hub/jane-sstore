@@ -1,0 +1,264 @@
+.app_container {
+    background-color: #e4e3e3;
+}
+
+.app_content {
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+}
+
+
+
+.product-img {
+    width: 460px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.product-img__big {
+    width: 100%;
+}
+
+.all-img__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+}
+
+.all-img__item-img {
+    width: 80px;
+}
+
+/* Information product detail */
+
+.name-product {
+    font-size: 2.5rem;
+    color: #595959;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.evaluate-product {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.evaluate-product-rank {
+    margin-right: 4px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.evaluate-product-rate {
+    padding-right: 4px;
+    color: var(--primary-color);
+}
+
+
+.evaluate-product-number {
+    padding: 0 8px;
+    border-left: 2px solid var(--border-color);
+    color: #595959;
+}
+
+.evaluate-product-number span {
+    text-decoration: underline;
+}
+
+.bougth-product-number {
+    padding-left: 8px;
+    border-left: 2px solid var(--border-color);
+    color: #595959;
+}
+
+.price-product {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+
+.move-product {
+    display: flex;
+    margin: 0 0 40px 40px;
+    align-items: flex-start;
+}
+
+.move-product__title {
+    font-size: 1.6rem;
+    margin: 0 40px 0 0;
+    color: #595959;
+    /* width: 200px; */
+}
+
+.move-product__detail {
+}
+
+.move-product__detail-free__img {
+    width: 20px;
+}
+
+.move-product__detail-free__text {
+    font-size: 1.5rem;
+    margin-left: 4px;
+}
+
+.move-product__detail-item__distance {
+    font-size: 1.5rem;
+    display: flex;
+    margin-left: 2px;
+}
+
+.detail-item__distance-total {
+    margin-left: 6px;
+    display: flex;
+}
+
+.move-product__detail-item__distance-title-1 {
+    color: #595959;
+    margin: 0 20px 0 0;
+}
+
+.move-product__detail-item__distance-title-2 {
+    color: #595959;
+    margin: 10px 20px 0 0;
+}
+
+.move-product__detail-item__distance-item-1 {
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.move-product__detail-item__distance-item-2 {
+    margin: 10px 0 0 0;
+}
+
+
+.move-product__detail-item__distance-item-1:hover .choose-distance-item {
+    display: block;
+}
+
+.distance-item-icon {
+    font-size: 1.2rem;
+}
+
+.choose-distance-item {
+    position: absolute;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    padding: 10px;
+    top: 136%;
+    box-shadow: 0 0 1px #000;
+    margin: 0;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.choose-distance-item::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    color: red;
+    left: 0;
+    top: -4%;
+}
+
+.choose-distance-item__input {
+    outline: none;
+    border: none;
+    background-color: #cfcece;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.choose-distance-item__list {
+    list-style: none;
+    padding: 0;
+    height: 100px;
+    overflow: auto;
+}
+
+.choose-distance-item__list li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.choose-number {
+    display: flex;
+    margin: 0 0 20px 40px;
+}
+
+.choose-number-title {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #595959;
+    margin-right: 60px;
+}
+
+.choose-number-adjust {
+    font-size: 1.8rem;
+}
+
+.adjust-add {
+    color: var(--primary-color);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.adjust-number {
+    cursor: default;
+    width: 20px;
+    border: none;
+    text-align: center;
+}
+
+.adjust-minus {
+    color: var(--primary-color);
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.buy-product {
+    margin: 0 0 40px 40px;
+}
+
+.btn.btn-add-cart {
+    margin-right: 20px;
+    background-color: rgba(0, 148, 133, 0.13);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn.btn-add-cart:hover {
+    background-color: transparent;
+}
+
+.btn-buy-right-now-link {
+    text-decoration: none;
+}
+
+.btn-buy-right-now:hover {
+    background-color: #04c9b5;
+}
+
+.descrition-product {
+    margin-left: 40px;
+}
+
+.descrition-product-title {
+    font-size: 1.6rem;
+    color: #595959;
+}
+
+.descrition-product-content {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    line-height: 1.6;
+}
