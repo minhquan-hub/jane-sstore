@@ -1,2 +1,2 @@
-# jane-sstore
+# janestore
 HTML , CSS, JAVASCRIPT
