@@ -59,7 +59,7 @@ function addCartAndBuyRightNow() {
     if(!localStorage.getItem('LINK_PRODUCT') == ''){
         var jsonLinkProduct = JSON.parse(localStorage.getItem('LINK_PRODUCT'));
     }
-    if(!localStorage.getItem('USER_LOGIN_SUCCESS')){
+    if(!localStorage.getItem('USER_LOGIN_SUCCESS') == ''){
         var jsonUserLoginSuccess = JSON.parse(localStorage.getItem('USER_LOGIN_SUCCESS'));
     }
     var cartUser = {
@@ -117,7 +117,6 @@ function addCartAndBuyRightNow() {
                     don't exist , well have to create user push array*/
                     for(var checkUser of jsonCartUser){
                         if(checkUser.userId == userId){
-                            console.log(checkUser.productBuy);
                             if(checkUser.productBuy.length == 1){
                                 var productBuyOne = checkUser.productBuy[0];
                                 if(productBuyOne.productId == product.productId){
@@ -177,10 +176,19 @@ function addCartAndBuyRightNow() {
         showProductHeaderCart();
     });
 }
-    
-// }
+
+function hoverImgae() {
+    var hoverImageSmall = document.querySelectorAll(".js-all-img__item-img");
+    var showImageBig = document.querySelector(".js-product-img__big");
+
+    for(let i = 0; i < hoverImageSmall.length; i++){
+        hoverImageSmall[i].addEventListener('click', function() {
+            showImageBig.setAttribute('src', hoverImageSmall[i].getAttribute('src'));
+        })
+    }
+}
 
 showinformationChoose();
 amountProduct();
 addCartAndBuyRightNow();
-// deleteProduct();
+hoverImgae();

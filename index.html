@@ -17,9 +17,10 @@
                 <div class="grid">
                     <nav class="header__navbar">
                         <ul class="header__navbar-list">
-                            <li class="header__nav-item header__nav-item--has-qr header__nav-item--separate">Vào của hàng trên ứng dụng Jane's
+                            <li class="header__nav-item header__nav-item--has-qr header__nav-item--separate">
+                                <a href="./guideUse.html" class="header__nav-item--separate-link">Các tính năng có trên web</a>
                                <!-- QR Code -->
-                                <div class="header__qr">
+                                <!-- <div class="header__qr">
                                     <img src="./assets/img/header-download-qr-code/qr-code.png" alt="" class="header__qr-img">
                                     <div class="header__qr-apps">
                                         <a href="https://shopee.vn/web" class="header__qr-link">
@@ -29,7 +30,7 @@
                                             <img src="./assets/img/header-download-qr-code/app-store.png" alt="" class="header__qr-download-omg">
                                         </a>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                             <li class="header__nav-item">
                                 <span class="header__nav-title--no-pointer">Kết nối</span>
@@ -159,7 +160,7 @@
                         <div class="header__cart">
                             <div class="header__cart-wrap">
                                 <i class="header__cart--icon fas fa-shopping-cart"></i>
-                                <span class="header__cart-notice">3</span>
+                                <span class="header__cart-notice js-header__cart-notice">0</span>
                                 <!-- no cart: header__cart-list--no-cart -->
                                 <div class="header__cart-list">
                                     <img src="./assets/img/no-cart.png" alt="no_cart" class="header__cart-no-cart-img">
@@ -881,6 +882,8 @@
 
     <script src="./assets/JS/mainUI1.js">
     </script>
+    <script src="./assets/JS/common_01.js">
+    </script>
     <script>
         Validator({
             form: '.js-auth-form-register',
@@ -910,8 +913,6 @@
                 
             ]
         });
-    </script>
-    <script src="./assets/JS/common_01.js">
     </script>
 </body>
 </html>

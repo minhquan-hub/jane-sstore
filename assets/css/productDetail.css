@@ -29,6 +29,11 @@
 
 .all-img__item-img {
     width: 80px;
+    cursor: pointer;
+}
+
+.all-img__item-img:hover {
+    border: 3px solid var(--primary-color);
 }
 
 /* Information product detail */

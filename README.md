@@ -1,2 +1,0 @@
-# janestore
-HTML , CSS, JAVASCRIPT

@@ -158,7 +158,7 @@
                         <div class="header__cart">
                             <div class="header__cart-wrap">
                                 <i class="header__cart--icon fas fa-shopping-cart"></i>
-                                <span class="header__cart-notice">3</span>
+                                <span class="header__cart-notice js-header__cart-notice">0</span>
                                 <!-- no cart: header__cart-list--no-cart -->
                                 <div class="header__cart-list">
                                     <img src="./assets/img/no-cart.png" alt="no_cart" class="header__cart-no-cart-img">
@@ -464,7 +464,7 @@
 
                     <div class="auth-form__controls">
                         <button class="btn btn--normal auth-form__controls-back js-auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        <button class="btn btn--primary js-btn-register">ĐĂNG KÝ</button>
                     </div>
                 </div>
 
@@ -552,23 +552,23 @@
             ]
         });
 
-        //  Validator({
-        //     form: '.js-auth-form-register',
-        //     errorElement: '.auth-form__messeage',
-        //     btn: '.js-btn-register',
-        //     rules: [
-        //         // Register
-        //         Validator.isEmail('#email-register'),
-        //         Validator.isRequired('#password-register'),
-        //         Validator.isConfirmed('#repassword-register', function() {
-        //             return document.querySelector('.auth-form #password-register').value;
-        //         }, "Mật khẩu nhập lại không chính xác"),
+         Validator({
+            form: '.js-auth-form-register',
+            errorElement: '.auth-form__messeage',
+            btn: '.js-btn-register',
+            rules: [
+                // Register
+                Validator.isEmail('#email-register'),
+                Validator.isRequired('#password-register'),
+                Validator.isConfirmed('#repassword-register', function() {
+                    return document.querySelector('.auth-form #password-register').value;
+                }, "Mật khẩu nhập lại không chính xác"),
                 
-        //     ],
-        //     onSubmit: function (data) {
-        //         console.log(data);
-        //     }
-        // });
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        });
 
     </script>
 </body>

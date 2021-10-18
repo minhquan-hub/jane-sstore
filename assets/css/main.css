@@ -21,9 +21,6 @@
     min-height: 26px;
 }
 
-.header__nav-item--has-qr:hover .header__qr {
-    display: block;
-}
 
 .header__nav-item--has-notify:hover .header__notify {
     display: block;
@@ -74,6 +71,16 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__nav-item--separate-link {
+    text-decoration: none;
+    color: #f81f1f;
+    font-weight: 600;
+}
+
+.header__nav-item--separate-link:hover {
+    color: #ff6e6e;
 }
 
 .header__nav-user {

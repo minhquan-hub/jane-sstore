@@ -1,0 +1,25 @@
+.heading-text {
+    text-align: center;
+    font-size: 5rem;
+    padding: 20px;
+}
+
+.guide-list {
+    list-style: none;
+}
+
+.guide-item__title {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.guide-item__content {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    width: 80%;
+}
+
+.guide-item__img {
+    width: 80%;
+    margin-left: 30px;
+}

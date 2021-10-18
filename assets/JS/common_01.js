@@ -282,6 +282,8 @@ function checkLogin() {
         btnLoginSuccessful.classList.add('open');
         closeModalBodyRegisterAndLogin();
         loginName.textContent = emailCheck;
+
+        showProductHeaderCart();
     }
 }
 
@@ -318,42 +320,52 @@ function autoLogin() {
 
 // Show product header cart
 function showProductHeaderCart() {
+    var liContentRemove = document.querySelectorAll('.header__cart-item');
+    var showAmountProduct = document.querySelector('.js-header__cart-notice');
+    var countAmountProduct = 0;
+
+    console.log(countAmountProduct);
+
     if(!localStorage.getItem('CART_USER') == ''){
         var jsonCartUser = JSON.parse(localStorage.getItem('CART_USER'));
     }
     if(!localStorage.getItem('USER_LOGIN_SUCCESS') == ''){
         var jsonUserLoginSuccess = JSON.parse(localStorage.getItem('USER_LOGIN_SUCCESS'));
     }
-    var liContentRemove = document.querySelectorAll('.header__cart-item');
 
     for(var i = 0; i < liContentRemove.length; i++){
         liContentRemove[i].remove();
     }
 
     if(!localStorage.getItem('CART_USER') == ''){
-        if(jsonCartUser.length <= 1){
-            var userOne = jsonCartUser[0];
-            if(jsonUserLoginSuccess.id === userOne.userId){
-                if(userOne.productBuy.length == 1){
-                    var productBuyOne = userOne.productBuy[0];
-                    headerCart(productBuyOne.productId,productBuyOne.amount);
-                }else {
-                    for(var checkProductUserOne of userOne.productBuy){
-                    headerCart(checkProductUserOne.productId,checkProductUserOne.amount);
-                    }
-                }
-            }else {
-                console.log('The user is empty');
-            }
-        }else {
-            for(var checkUser of jsonCartUser){
-                if(jsonUserLoginSuccess.id == checkUser.userId){
-                    if(checkUser.productBuy.length == 1){
-                        var productBuyOne = checkUser.productBuy[0];
+        if(!localStorage.getItem('USER_LOGIN_SUCCESS') == '') {
+            if(jsonCartUser.length <= 1){
+                var userOne = jsonCartUser[0];
+                if(jsonUserLoginSuccess.id === userOne.userId){
+                    countAmountProduct = userOne.productBuy.length;
+                    if(userOne.productBuy.length == 1){
+                        var productBuyOne = userOne.productBuy[0];
                         headerCart(productBuyOne.productId,productBuyOne.amount);
                     }else {
-                        for(var checkProductUser of checkUser.productBuy){
+                        countAmountProduct = userOne.productBuy.length;
+                        for(var checkProductUserOne of userOne.productBuy){
+                        headerCart(checkProductUserOne.productId,checkProductUserOne.amount);
+                        }
+                    }
+                }else {
+                    console.log('The user is empty');
+                }
+            }else {
+                for(var checkUser of jsonCartUser){
+                    if(jsonUserLoginSuccess.id == checkUser.userId){
+                        countAmountProduct = checkUser.productBuy.length;
+                        if(checkUser.productBuy.length == 1){
+                            var productBuyOne = checkUser.productBuy[0];
+                            headerCart(productBuyOne.productId,productBuyOne.amount);
+                        }else {
+                            for(var checkProductUser of checkUser.productBuy){
                                 headerCart(checkProductUser.productId,checkProductUser.amount);
+                            }
                         }
                     }
                 }
@@ -362,6 +374,8 @@ function showProductHeaderCart() {
     }else {
         console.log("This array is empty")
     }
+
+    showAmountProduct.textContent = countAmountProduct;
 
     function productInformation(productId) {
         var jsonInformationProduct = JSON.parse(localStorage.getItem('INFORMATION_PRODUCT'));
@@ -393,11 +407,9 @@ function deleteProduct() {
     }
 
     for(let i = 0; i < btnDeleteProduct.length; i++){
-        console.log(btnDeleteProduct[i]);
         btnDeleteProduct[i].onclick = function() {
             removeItem(i);
             showProductHeaderCart();
-            console.log('1');
         }
     }
 
@@ -414,7 +426,6 @@ function deleteProduct() {
                 }
             }
             localStorage.setItem('CART_USER', JSON.stringify(jsonCartUser));
-            console.log('ok');
         }
     }
 }
